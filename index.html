@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <title>BuddHabit - Habit Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 id="greeting">Here is your Habit Buddy</h1>
+
+    <div id="usernameForm" class="username-form">
+      <input type="text" id="usernameInput" placeholder="Enter your name...">
+      <button onclick="saveUsername()">Let's Go!</button>
+    </div>
+
+    <div id="mainApp" style="display: none;">
+      <div class="habit-form">
+        <input type="text" id="habitInput" placeholder="Enter a new habit...">
+        <button onclick="addHabit()">Add Habit</button>
+      </div>
+
+      <ul id="habitList"></ul>
+
+      <div id="badgeArea"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
