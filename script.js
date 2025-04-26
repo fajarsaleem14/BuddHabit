@@ -17,7 +17,7 @@ function saveUsername() {
     localStorage.setItem('username', username);
     document.getElementById('usernameForm').style.display = 'none';
     document.getElementById('mainApp').style.display = 'block';
-    document.getElementById('greeting').innerText = `🏆 Welcome, ${username}! Let's achieve greatness today!`;
+    document.getElementById('greeting').innerText = `Welcome, ${username}! Let's achieve greatness today!`;
     renderHabits();
   }
 }
